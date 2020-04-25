@@ -1,0 +1,31 @@
+@import './keyframes/index.scss';
+
+%img {
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffd36f;
+
+    .about {
+        h1 {
+            margin-top: -30px;
+            padding-bottom: 50px;
+        }
+
+        .about_image {
+            height: 500px;
+            background-image: url(https://assets-ouch.icons8.com/preview/830/e8c81730-f61a-40b5-afc2-4f0de2bc174f.png);
+            @extend %img;
+
+            animation: move-left-out 8s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        }
+    }
+}
+
+.typed-cursor--blink {
+    animation: blink 1s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
